@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+.container-about
+{
+    border-radius: 5px;
+    background-color: #f2f3f4;
+    padding: 10px;
+}
+.header-about
+{
+    text-align: center;
+}
+
+h2,p
+{
+    color: black;
+    margin-bottom: 20px;
+}
+
+h2
+{
+    font-size: 50px;
+}
+p
+{
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+}
+
+.column
+{
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+.column img
+{
+    width: 100%;
+}
+
+.row::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input, textarea
+{
+    width: 100%;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    outline-color: greenyellow;
+    resize: vertical;
+}
+
+input
+{
+    height: 40px;
+    padding: o 10px;
+}
+
+textarea
+{
+    height: 170px;
+    padding: 17px;
+}
+
+.button-submit
+        {
+            padding: 9px 25px;
+            background-color: greenyellow;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.5s ease-in 0.3s;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            font-family: 'Nunito', sans-serif;;
+            color: black;
+        }
+        .button-submit:hover
+        {
+            color: blueviolet;
+        }
+        .button-submit:hover::before
+        {
+            height: 180%;
+        }
+
+        .button-submit::before
+        {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            z-index: -1;
+            transition: 0.8s;
+            bottom: 0;   
+        }        
